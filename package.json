@@ -1,0 +1,31 @@
+{
+  "name": "battle-subway",
+  "version": "1.0.0",
+  "description": "A Pokemon battle simulator implemented in Node.js.",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint index.ts",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwl/battle-subway-js.git"
+  },
+  "keywords": [
+    "Pokemon",
+    "nodejs"
+  ],
+  "author": "James Leung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwl/battle-subway-js/issues"
+  },
+  "homepage": "https://github.com/jwl/battle-subway-js#readme",
+  "devDependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "typescript": "^3.2.2"
+  }
+}
