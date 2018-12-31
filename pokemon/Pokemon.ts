@@ -1,10 +1,22 @@
 class Pokemon {
   private name: string;
   private currHP: number;
+  private nonVolStatus: string;
+  private bsm: BattleStatModifiers;
 
-  constructor(name: string, currHP: number) {
+  /*   constructor(name: string, currHP: number) {
     this.name = name;
     this.currHP = currHP;
+  } */
+
+  constructor(pokemonBuilder: PokemonBuilder) {
+    this.name = pokemonBuilder.name;
+    this.currHP = pokemonBuilder.currHP;
+    //TODO: stats
+    //TODO: moveset
+    this.nonVolStatus = pokemonBuilder.nonVolStatus;
+    //TODO: volstatus
+    this.bsm = pokemonBuilder.bsm;
   }
 
   getName(): string {
