@@ -1,12 +1,4 @@
 class PokemonBuilder {
-  /* String name;
-  int currHP;
-  Stats stats;
-  MoveSet moveSet;
-  String nonVolStatus;
-  JSONObject volStatus;
-  BattleStatModifiers bsm; */
-
   public name: string;
   public currHP: number;
   //TODO: stats
