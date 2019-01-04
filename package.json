@@ -4,8 +4,9 @@
   "description": "A Pokemon battle simulator implemented in Node.js.",
   "main": "index.ts",
   "scripts": {
-    "lint": "eslint index.ts",
+    "lint": "eslint main.ts",
     "tsc": "tsc",
+    "main": "./node_modules/.bin/ts-node ./main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "eslint": "^5.11.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
   }
 }

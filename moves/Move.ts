@@ -6,6 +6,7 @@ interface Move {
   getMaxPP(): number;
   getCurrPP(): number;
   getAccuracy(): number;
-  // TODO: figure out how to do JSON and implement the following:
-  // getDamagePart(), getStatsChangePart(), getStatusEffectPart()
+  getDamagePart(): any;
+  getStatsChangePart(): any;
+  getStatusEffectPart(): any;
 }

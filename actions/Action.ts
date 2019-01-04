@@ -7,4 +7,14 @@ interface Action {
   allied: boolean;
   moveInfo: Move;
   actionType: string;
+
+  //TODO implement following method signatures:
+  /* public int getPriority(){return priority;}
+  public String getTrainer(){return trainer;}
+  public Pokemon getActor(){return actor;}
+  public int getTarget(){return target;}
+  public boolean getTeamFlag(){return allied;}
+  public String getActionType(){return actionType;}
+  public Move getMoveInfo(){return moveInfo;}
+  public void setPriority(int priority){this.priority = priority;} */
 }
