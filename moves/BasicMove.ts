@@ -1,6 +1,6 @@
 // var fs = require('fs');
 
-class BattleMove implements Move {
+export class BasicMove implements Move {
   private tackleJSON: any = {
     Tackle: {
       description:
@@ -32,6 +32,7 @@ class BattleMove implements Move {
     this.name = name;
 
     var tackledata = JSON.parse(this.tackleJSON);
+    const data = require("../pokemondata/moves.json");
 
     // TODO: use JSON pulled from filesystem instead of hardcoded example JSON
     // let JSONMoveObject: any =
