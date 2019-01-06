@@ -1,5 +1,6 @@
 import { Pokemon } from "../pokemon/Pokemon";
 import { Move } from "../moves/Move";
+import { getPriority } from "os";
 
 export interface Action {
   //TODO: implement as an abstract class
@@ -11,6 +12,7 @@ export interface Action {
   moveInfo: Move;
   actionType: string;
 
+  getPriority(): number;
   //TODO implement following method signatures:
   /* public int getPriority(){return priority;}
   public String getTrainer(){return trainer;}
