@@ -1,18 +1,9 @@
 // var fs = require('fs');
+import { Move } from "./Move";
 
 export class BasicMove implements Move {
-  private tackleJSON: any = {
-    Tackle: {
-      description:
-        "A physical attack in which the user charges and slams into the target with its whole body.",
-      moveMechanics: ["damage"],
-      moveCategory: "Physical",
-      moveType: "Normal",
-      pp: 35,
-      accuracy: 100,
-      power: 40
-    }
-  };
+  private tackleJSON =
+    '{ "description": "A physical attack in which the user charges and slams into the target with its whole body.", "moveMechanics": ["damage"], "moveCategory": "Physical", "moveType": "Normal", "pp": 35, "accuracy": 100, "power": 40 }';
 
   // private fs = require('fs');
   // fs.readFileSync('../pokemondata/moves.json','utf8');
@@ -32,7 +23,7 @@ export class BasicMove implements Move {
     this.name = name;
 
     var tackledata = JSON.parse(this.tackleJSON);
-    const data = require("../pokemondata/moves.json");
+    // const data = require("../pokemondata/moves.json");
 
     // TODO: use JSON pulled from filesystem instead of hardcoded example JSON
     // let JSONMoveObject: any =
