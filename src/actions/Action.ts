@@ -1,3 +1,6 @@
+import { Pokemon } from "../pokemon/Pokemon";
+import { Move } from "../moves/Move";
+
 export interface Action {
   //TODO: implement as an abstract class
   priority: number;

@@ -1,4 +1,7 @@
-class PokemonBuilder {
+import { BattleStatModifiers } from "../pokemon/BattleStatsModifier";
+import { Pokemon } from "../pokemon/Pokemon";
+
+export class PokemonBuilder {
   public name: string;
   public currHP: number;
   //TODO: stats

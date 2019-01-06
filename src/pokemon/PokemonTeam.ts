@@ -1,4 +1,6 @@
-class PokemonTeam {
+import { Pokemon } from "../pokemon/Pokemon";
+
+export class PokemonTeam {
   // TODO: list of Pokemon objects, how to do lists in Typescript?
   private team: Pokemon[];
   private trainer: string;

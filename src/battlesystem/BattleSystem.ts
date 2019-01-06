@@ -1,3 +1,8 @@
+import { GameState } from "../game/GameState";
+import { PokemonTeam } from "../pokemon/PokemonTeam";
+import { Action } from "../actions/Action";
+import { BattleSystemAction } from "../battlesystem/BattleSystemAction";
+
 export class BattleSystem {
   private gameState: GameState;
   private team1: PokemonTeam;

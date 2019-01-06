@@ -1,4 +1,7 @@
-class Pokemon {
+import { BattleStatModifiers } from "../pokemon/BattleStatsModifier";
+import { PokemonBuilder } from "../pokemon/PokemonBuilder";
+
+export class Pokemon {
   private name: string;
   private currHP: number;
   private nonVolStatus: string;

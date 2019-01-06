@@ -1,4 +1,4 @@
-class BattleStatModifiers {
+export class BattleStatModifiers {
   private attackStage: number;
   private defenseStage: number;
   private spAtkStage: number;

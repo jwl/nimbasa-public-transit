@@ -1,3 +1,5 @@
+import { PokemonTeam } from "../pokemon/PokemonTeam";
+
 export class GameState {
   private team1: PokemonTeam;
   private team2: PokemonTeam;
