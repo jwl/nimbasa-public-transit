@@ -1,4 +1,4 @@
-interface Move {
+export interface Move {
   getName(): string;
   getDescription(): string;
   getMoveType(): string;

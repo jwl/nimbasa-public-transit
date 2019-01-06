@@ -1,4 +1,4 @@
-class GameState {
+export class GameState {
   private team1: PokemonTeam;
   private team2: PokemonTeam;
   private log: string[][];

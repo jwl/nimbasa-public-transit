@@ -1,4 +1,4 @@
-interface Action {
+export interface Action {
   //TODO: implement as an abstract class
   priority: number;
   trainer: string;

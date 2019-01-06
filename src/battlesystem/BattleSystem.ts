@@ -1,4 +1,4 @@
-class BattleSystem {
+export class BattleSystem {
   private gameState: GameState;
   private team1: PokemonTeam;
   private team2: PokemonTeam;
