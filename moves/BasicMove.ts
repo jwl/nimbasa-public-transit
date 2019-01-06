@@ -1,5 +1,22 @@
 // var fs = require('fs');
+
 class BattleMove implements Move {
+  private tackleJSON: any = {
+    Tackle: {
+      description:
+        "A physical attack in which the user charges and slams into the target with its whole body.",
+      moveMechanics: ["damage"],
+      moveCategory: "Physical",
+      moveType: "Normal",
+      pp: 35,
+      accuracy: 100,
+      power: 40
+    }
+  };
+
+  // private fs = require('fs');
+  // fs.readFileSync('../pokemondata/moves.json','utf8');
+
   private name: string;
   private description: string;
   private moveType: string;
@@ -14,14 +31,17 @@ class BattleMove implements Move {
   constructor(name: string) {
     this.name = name;
 
-    // TODO implement importing JSON files and properly initializing all fields
+    var tackledata = JSON.parse(this.tackleJSON);
+
+    // TODO: use JSON pulled from filesystem instead of hardcoded example JSON
     // let JSONMoveObject: any =
-    this.description = "";
-    this.moveType = "";
-    this.moveMechanic = [""];
-    this.maxPP = -1;
-    this.currPP = -1;
-    this.accuracy = -1;
+    // fs.readFileSync('foo.txt','utf8');
+    this.description = tackledata.description;
+    this.moveType = tackledata.moveType;
+    this.moveMechanic = tackledata.moveMechanics;
+    this.maxPP = tackledata.maxPP;
+    this.currPP = this.maxPP;
+    this.accuracy = tackledata.accuracy;
   }
 
   getName(): string {
