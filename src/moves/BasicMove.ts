@@ -26,12 +26,24 @@ export class BasicMove implements Move {
     // const data = require("../pokemondata/moves.json");
 
     // TODO: use JSON pulled from filesystem instead of hardcoded example JSON
-    // let JSONMoveObject: any =
-    // fs.readFileSync('foo.txt','utf8');
+    // see https://flaviocopes.com/nodejs-parse-json/ for sync vs async file reading
+    // const fs = require("fs");
+    // fs.readFile("../../pokemondata/moves.json", "utf8", (err, fileContents) => {
+    //   if (err) {
+    //     console.error(err);
+    //     return;
+    //   }
+    //   try {
+    //     const data = JSON.parse(fileContents);
+    //   } catch (err) {
+    //     console.error(err);
+    //   }
+    // });
+
     this.description = tackledata.description;
     this.moveType = tackledata.moveType;
     this.moveMechanic = tackledata.moveMechanics;
-    this.maxPP = tackledata.maxPP;
+    this.maxPP = tackledata.pp;
     this.currPP = this.maxPP;
     this.accuracy = tackledata.accuracy;
   }

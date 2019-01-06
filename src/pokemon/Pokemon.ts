@@ -7,11 +7,6 @@ export class Pokemon {
   private nonVolStatus: string;
   private bsm: BattleStatModifiers;
 
-  /*   constructor(name: string, currHP: number) {
-    this.name = name;
-    this.currHP = currHP;
-  } */
-
   constructor(pokemonBuilder: PokemonBuilder) {
     this.name = pokemonBuilder.name;
     this.currHP = pokemonBuilder.currHP;
