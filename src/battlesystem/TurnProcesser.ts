@@ -1,7 +1,7 @@
 import { GameState } from "../game/GameState";
 import { PokemonTeam } from "../pokemon/PokemonTeam";
 import { Action } from "../actions/Action";
-import { BattleSystemAction } from "./BattleSystemAction";
+import { BattleSystemAction } from "../battlesystem/BattleSystemAction";
 
 export class TurnProcesser {
   private team1: PokemonTeam;
