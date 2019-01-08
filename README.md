@@ -25,3 +25,7 @@ Simple Pokemon battle engine implemented in TypeScript/Javascript
     └── <Integration and Funcitonal tests>
 ```
 Unit tests are included in the same directory as the classes they test. Integration and functional tests are in the `tests` directory
+
+
+### Acknowledgements
+Based on `battle-slackway`, a simple Pokemon battle engine implemented in Java originally written by Samuel Han, Joe Granville, Leo DiCara and James Leung.
