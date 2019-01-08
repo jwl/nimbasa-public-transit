@@ -1,4 +1,4 @@
-# battle-subway-ts
+# nimbasa-public-transit
 Simple Pokemon battle engine implemented in TypeScript/Javascript
 
 ### Usage
