@@ -31,21 +31,25 @@ describe("Unit tests for class Pokemon", () => {
 
   it("Pokemon can return their nonvolatile and volatile status", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
+    //TODO
     expect(false).to.equal(true);
   });
 
   it("Pokemon can return their moveset", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
+    //TODO
     expect(false).to.equal(true);
   });
 
   it("Pokemon can return their stats", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
+    //TODO
     expect(false).to.equal(true);
   });
 
   it("Pokemon can return their current battle stat modifiers", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
+    //TODO
     expect(false).to.equal(true);
   });
 });

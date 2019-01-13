@@ -21,31 +21,41 @@ export class BasicMove implements Move {
 
   constructor(name: string) {
     this.name = name;
+    this.description = "hello";
+    this.moveType = "";
+    this.moveMechanic = [];
+    this.maxPP = -1;
+    this.currPP = this.maxPP;
+    this.accuracy = -1;
 
     var tackledata = JSON.parse(this.tackleJSON);
+    var data: any;
     // const data = require("../pokemondata/moves.json");
 
     // TODO: use JSON pulled from filesystem instead of hardcoded example JSON
     // see https://flaviocopes.com/nodejs-parse-json/ for sync vs async file reading
-    // const fs = require("fs");
-    // fs.readFile("../../pokemondata/moves.json", "utf8", (err, fileContents) => {
-    //   if (err) {
-    //     console.error(err);
-    //     return;
-    //   }
-    //   try {
-    //     const data = JSON.parse(fileContents);
-    //   } catch (err) {
-    //     console.error(err);
-    //   }
-    // });
 
-    this.description = tackledata.description;
-    this.moveType = tackledata.moveType;
-    this.moveMechanic = tackledata.moveMechanics;
-    this.maxPP = tackledata.pp;
-    this.currPP = this.maxPP;
-    this.accuracy = tackledata.accuracy;
+    var path = require("path");
+    // console.log("./ = %s", path.resolve("./"));
+    // console.log("__dirname = %s", path.resolve(__dirname));
+
+    const fs = require("fs");
+    const fileContents = fs.readFileSync(
+      path.resolve("./") + "/pokemondata/moves.json",
+      "utf8"
+    );
+
+    try {
+      const data = JSON.parse(fileContents);
+      this.description = data[name].description;
+      this.moveType = data[name].moveType;
+      this.moveMechanic = data[name].moveMechanics;
+      this.maxPP = data[name].pp;
+      this.currPP = this.maxPP;
+      this.accuracy = data[name].accuracy;
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   getName(): string {
