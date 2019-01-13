@@ -1,16 +1,18 @@
 import { BattleStatModifiers } from "../pokemon/BattleStatsModifier";
 import { PokemonBuilder } from "../pokemon/PokemonBuilder";
+import { Stats } from "../pokemon/Stats";
 
 export class Pokemon {
   private name: string;
   private currHP: number;
+  private stats: Stats;
   private nonVolStatus: string;
   private bsm: BattleStatModifiers;
 
   constructor(pokemonBuilder: PokemonBuilder) {
     this.name = pokemonBuilder.name;
     this.currHP = pokemonBuilder.currHP;
-    //TODO: stats
+    this.stats = pokemonBuilder.stats;
     //TODO: moveset
     this.nonVolStatus = pokemonBuilder.nonVolStatus;
     //TODO: volstatus

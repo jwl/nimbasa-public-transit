@@ -1,12 +1,8 @@
-// var fs = require('fs');
 import { Move } from "./Move";
 
 export class BasicMove implements Move {
   private tackleJSON =
     '{ "description": "A physical attack in which the user charges and slams into the target with its whole body.", "moveMechanics": ["damage"], "moveCategory": "Physical", "moveType": "Normal", "pp": 35, "accuracy": 100, "power": 40 }';
-
-  // private fs = require('fs');
-  // fs.readFileSync('../pokemondata/moves.json','utf8');
 
   private name: string;
   private description: string;
@@ -28,16 +24,10 @@ export class BasicMove implements Move {
     this.currPP = this.maxPP;
     this.accuracy = -1;
 
-    var tackledata = JSON.parse(this.tackleJSON);
     var data: any;
-    // const data = require("../pokemondata/moves.json");
 
-    // TODO: use JSON pulled from filesystem instead of hardcoded example JSON
     // see https://flaviocopes.com/nodejs-parse-json/ for sync vs async file reading
-
     var path = require("path");
-    // console.log("./ = %s", path.resolve("./"));
-    // console.log("__dirname = %s", path.resolve(__dirname));
 
     const fs = require("fs");
     const fileContents = fs.readFileSync(

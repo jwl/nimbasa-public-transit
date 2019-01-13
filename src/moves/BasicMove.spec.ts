@@ -2,12 +2,6 @@ import { BasicMove } from "./BasicMove";
 import { expect } from "chai";
 import "mocha";
 
-// expect(result.getMoveMechanic()[0]).to.equal("damage");
-// expect(result.getMoveType()).to.equal("Normal");
-// expect(result.getMaxPP()).to.equal(35);
-// expect(result.getCurrPP()).to.equal(35);
-// expect(result.getAccuracy()).to.equal(100);
-
 describe("Unit tests for class BasicMove", () => {
   it("Has a name", () => {
     const result = new BasicMove("Tackle");

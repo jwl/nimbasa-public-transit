@@ -1,10 +1,11 @@
 import { BattleStatModifiers } from "../pokemon/BattleStatsModifier";
 import { Pokemon } from "../pokemon/Pokemon";
+import { Stats } from "../pokemon/Stats";
 
 export class PokemonBuilder {
   public name: string;
   public currHP: number;
-  //TODO: stats
+  public stats: Stats;
   //TODO: MoveSet
   public nonVolStatus: string;
   //TODO: volStatus as JSON
@@ -12,6 +13,7 @@ export class PokemonBuilder {
 
   constructor(name: string) {
     this.name = name;
+    this.stats = new Stats(name);
     this.currHP = -1;
     this.nonVolStatus = "";
     this.bsm = new BattleStatModifiers();
