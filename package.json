@@ -1,5 +1,5 @@
 {
-  "name": "battle-subway",
+  "name": "nimbasa-public-transit",
   "version": "1.0.0",
   "description": "A Pokemon battle simulator implemented in Node.js.",
   "main": "index.ts",
@@ -7,11 +7,12 @@
     "lint": "eslint main.ts",
     "tsc": "tsc",
     "main": "./node_modules/.bin/ts-node ./main.ts",
-    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "test-single": "mocha -r ts-node/register $1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jwl/battle-subway-js.git"
+    "url": "git+https://github.com/jwl/nimbasa-public-transit.git"
   },
   "keywords": [
     "Pokemon",

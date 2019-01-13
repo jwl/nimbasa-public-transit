@@ -4,8 +4,10 @@ Simple Pokemon battle engine implemented in TypeScript/Javascript
 ### Usage
 * To install:
   * `npm install`
-* To run tests:
+* To run all tests:
   * `npm run test`
+* To run a single test suite:
+  * `npm run test-single -- <path_to_test_file>`
 * To run application:
   * TBD
 
