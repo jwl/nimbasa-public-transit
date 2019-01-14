@@ -7,8 +7,9 @@
     "lint": "eslint main.ts",
     "tsc": "tsc",
     "main": "./node_modules/.bin/ts-node ./main.ts",
-    "test": "mocha -r ts-node/register src/**/*.spec.ts",
-    "test-single": "mocha -r ts-node/register $1"
+    "tests": "mocha -r ts-node/register src/**/*.spec.ts",
+    "test-single": "mocha -r ts-node/register $1",
+    "test": "mocha -r ts-node/register $1"
   },
   "repository": {
     "type": "git",
