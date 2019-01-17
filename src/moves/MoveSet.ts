@@ -1,5 +1,6 @@
 import { Move } from "../moves/Move";
 import { MoveFactory } from "../moves/MoveFactory";
+import { DataParser } from "../common/DataParser";
 
 export class MoveSet {
   protected moveSet: Move[];
@@ -19,6 +20,12 @@ export class MoveSet {
     } catch (e) {
       throw new Error(e);
     }
+  }
+
+  public static getMovesFromPokemon(pokemonName: string): string[] {
+    let data: any = DataParser.getObjectFromJSON("../pokemondata/moveset.json");
+    let movesList: string[] = data[name];
+    return movesList;
   }
 
   public addMove(move: Move): void {
