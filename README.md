@@ -9,8 +9,9 @@ Simple Pokemon battle engine implemented in TypeScript/Javascript
 * To run a single test suite:
   * `npm run test-single -- <path_to_test_file>`
   * `npm run test -- <path_to_test_file>`
+  * ie. `npm run test-single src/moves/MoveSet.spec.ts`
 * To run application:
-  * TBD
+  * `npm run main`
 
 ### Project Structure
 ```

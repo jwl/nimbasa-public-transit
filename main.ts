@@ -1,2 +1,7 @@
+import { Game } from "./src/game/Game";
+
+
 /* eslint-disable no-console */
-console.log('Hello world');
+
+let game: Game = new Game();
+game.run();

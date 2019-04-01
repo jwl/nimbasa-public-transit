@@ -6,7 +6,7 @@ export class MoveFactory {
   public static createMove(name: string): Move {
     //TODO parse moves json
     let move: Move = new BasicMove(name);
-    let data: any = DataParser.getObjectFromJSON("../pokemondata/moves.json");
+    let data: any = DataParser.getObjectFromJSON("/pokemondata/moves.json");
 
     // TODO implement switch that creates move decorators
 

@@ -1,3 +1,5 @@
+import { ENGINE_METHOD_NONE } from "constants";
+
 export class DataParser {
   public static getObjectFromJSON(filepath: string): Object {
     var data: any;
@@ -7,11 +9,12 @@ export class DataParser {
     const fileContents = fs.readFileSync(path.resolve("./") + filepath, "utf8");
 
     try {
-      const data = JSON.parse(fileContents);
+      let data = JSON.parse(fileContents);
+      // console.log("DataParser: data is: " + JSON.stringify(data))
+      return data
     } catch (err) {
-      console.error(err);
+      throw new Error(err);
     }
 
-    return data;
   }
 }

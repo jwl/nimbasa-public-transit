@@ -23,8 +23,9 @@ export class MoveSet {
   }
 
   public static getMovesFromPokemon(pokemonName: string): string[] {
-    let data: any = DataParser.getObjectFromJSON("../pokemondata/moveset.json");
-    let movesList: string[] = data[name];
+    let data: any = DataParser.getObjectFromJSON("/pokemondata/movesets.json");
+    // console.log("outputting contents of data: ", data);
+    let movesList: string[] = data[pokemonName];
     return movesList;
   }
 
