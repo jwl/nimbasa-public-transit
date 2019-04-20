@@ -36,4 +36,12 @@ export class MoveSet {
       throw new Error("Already have max number of moves!");
     }
   }
+
+  public getMovesAsStrings(): string[] {
+    let moves: string[] = [];
+    for (let move of this.moveSet) {
+      moves.push(move.getName());
+    }
+    return moves;
+  }
 }

@@ -22,6 +22,10 @@ export class Pokemon {
     this.bsm = pokemonBuilder.bsm;
   }
 
+  getMoveSet(): MoveSet {
+    return this.moveSet;
+  }
+
   getName(): string {
     return this.name;
   }
