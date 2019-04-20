@@ -21,7 +21,7 @@ describe("Unit tests for class Pokemon", () => {
 
   it("Pokemon have HP", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
-    expect(testPKMN.getCurrHP()).to.equal(39);
+    expect(testPKMN.getCurrHP()).to.equal(117);
   });
 
   it("Pokemon are alive by default", () => {

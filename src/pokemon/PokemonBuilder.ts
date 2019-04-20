@@ -17,7 +17,7 @@ export class PokemonBuilder {
     this.name = name;
     this.stats = new Stats(name);
     this.moveSet = new MoveSet([]);
-    this.currHP = -1;
+    this.currHP = this.stats.getHP();
     this.nonVolStatus = "";
     this.bsm = new BattleStatModifiers();
   }

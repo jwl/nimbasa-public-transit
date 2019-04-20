@@ -50,7 +50,6 @@ export class Stats {
   }
 
   // https://bulbapedia.bulbagarden.net/wiki/Statistic#In_Generation_III_onward
-
   public getHP(): number {
     return Math.floor(
       (2 * this.hp + this.EVs / 4) * (this.level / 100) + this.level + 10
