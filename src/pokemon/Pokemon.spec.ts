@@ -43,8 +43,14 @@ describe("Unit tests for class Pokemon", () => {
 
   it("Pokemon can return their stats", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
-    //TODO
-    expect(false).to.equal(true);
+    let charmanderStats = testPKMN.getStats();
+    // expect(charmanderStats).to.be.a('stats')
+    expect(charmanderStats.getHP()).to.equal(117);
+    expect(charmanderStats.getAttack()).to.equal(75);
+    expect(charmanderStats.getDefense()).to.equal(66);
+    expect(charmanderStats.getSpAtk()).to.equal(83);
+    expect(charmanderStats.getSpDef()).to.equal(73);
+    expect(charmanderStats.getSpeed()).to.equal(88);
   });
 
   it("Pokemon can return their current battle stat modifiers", () => {
