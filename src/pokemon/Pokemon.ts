@@ -29,6 +29,10 @@ export class Pokemon {
     return this.moveSet;
   }
 
+  setMoveSet(newMoveSet: MoveSet) {
+    this.moveSet = newMoveSet;
+  }
+
   getName(): string {
     return this.name;
   }
@@ -44,6 +48,10 @@ export class Pokemon {
     }
   }
 
+  getBSM(): BattleStatModifiers {
+    return this.bsm;
+  }
+
   isAlive(): boolean {
     if (this.currHP > 0) {
       return true;
@@ -54,5 +62,9 @@ export class Pokemon {
 
   getNonVolStatus(): string {
     return this.nonVolStatus;
+  }
+
+  setNonVolStatus(newStatus: string) {
+    this.nonVolStatus = newStatus;
   }
 }

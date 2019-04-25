@@ -1,9 +1,10 @@
+import "mocha";
 import { Pokemon } from "./Pokemon";
 import { Stats } from "./Stats";
 import { expect } from "chai";
-import "mocha";
 import { PokemonFactory } from "./PokemonFactory";
 import { MoveSet } from "../moves/MoveSet";
+import { BattleStatModifiers } from "./BattleStatsModifier";
 
 describe("Unit tests for class Pokemon", () => {
   it("Can be built from PokemonFactory from a given name", () => {
@@ -33,8 +34,10 @@ describe("Unit tests for class Pokemon", () => {
 
   it("Pokemon can return their nonvolatile and volatile status", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
-    //TODO
-    expect(false).to.equal(true);
+    expect(testPKMN.getNonVolStatus()).to.be.a('String');
+    testPKMN.setNonVolStatus("Poison");
+    expect(testPKMN.getNonVolStatus()).to.be.a('String');
+    expect(testPKMN.getNonVolStatus()).to.equal("Poison");
   });
 
   it("Pokemon can return their moveset", () => {
@@ -56,7 +59,7 @@ describe("Unit tests for class Pokemon", () => {
 
   it("Pokemon can return their current battle stat modifiers", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
-    //TODO
-    expect(false).to.equal(true);
+    let charmanderBSM = testPKMN.getBSM();
+    expect(charmanderBSM).to.be.an.instanceOf(BattleStatModifiers);
   });
 });
