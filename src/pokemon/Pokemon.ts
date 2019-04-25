@@ -16,7 +16,6 @@ export class Pokemon {
     this.currHP = pokemonBuilder.currHP;
     this.stats = pokemonBuilder.stats;
     this.moveSet = pokemonBuilder.moveSet;
-    //TODO: moveset
     this.nonVolStatus = pokemonBuilder.nonVolStatus;
     //TODO: volstatus
     this.bsm = pokemonBuilder.bsm;
@@ -51,5 +50,9 @@ export class Pokemon {
     } else {
       return false;
     }
+  }
+
+  getNonVolStatus(): string {
+    return this.nonVolStatus;
   }
 }

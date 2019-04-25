@@ -1,4 +1,5 @@
 import { Pokemon } from "./Pokemon";
+import { Stats } from "./Stats";
 import { expect } from "chai";
 import "mocha";
 import { PokemonFactory } from "./PokemonFactory";
@@ -44,7 +45,7 @@ describe("Unit tests for class Pokemon", () => {
   it("Pokemon can return their stats", () => {
     const testPKMN = PokemonFactory.createPokemon("Charmander");
     let charmanderStats = testPKMN.getStats();
-    // expect(charmanderStats).to.be.a('stats')
+    expect(charmanderStats).to.be.an.instanceOf(Stats);
     expect(charmanderStats.getHP()).to.equal(117);
     expect(charmanderStats.getAttack()).to.equal(75);
     expect(charmanderStats.getDefense()).to.equal(66);
