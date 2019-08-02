@@ -7,7 +7,7 @@
     "lint": "eslint main.ts",
     "tsc": "tsc",
     "main": "./node_modules/.bin/ts-node ./main.ts",
-    "dev": "tsc-watch --onSuccess \"ts-node ./dist/server.js\"",
+    "dev": "tsc-watch --onSuccess \"ts-node ./src/server.ts\"",
     "tests": "mocha -r ts-node/register src/**/*.spec.ts",
     "test-single": "mocha -r ts-node/register $1",
     "test": "mocha -r ts-node/register $1"
