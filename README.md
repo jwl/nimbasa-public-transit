@@ -31,5 +31,10 @@ Simple Pokemon battle engine implemented in TypeScript/Javascript
 Unit tests are included in the same directory as the classes they test. Integration and functional tests are in the `tests` directory
 
 
+### API
+
+* `/v1/pokemon/<pokemon_id>/stats`: Gives stats of the given Pokemon
+
+
 ### Acknowledgements
 Based on `battle-slackway`, a simple Pokemon battle engine implemented in Java originally written by Samuel Han, Joe Granville, Leo DiCara and James Leung.
