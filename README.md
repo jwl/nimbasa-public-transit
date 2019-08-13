@@ -38,3 +38,5 @@ Unit tests are included in the same directory as the classes they test. Integrat
 
 ### Acknowledgements
 Based on `battle-slackway`, a simple Pokemon battle engine implemented in Java originally written by Samuel Han, Joe Granville, Leo DiCara and James Leung.
+
+API structure based heavily on [this tutorial](https://itnext.io/production-ready-node-js-rest-apis-setup-using-typescript-postgresql-and-redis-a9525871407)
